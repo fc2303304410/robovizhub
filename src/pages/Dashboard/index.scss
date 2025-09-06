@@ -1,0 +1,74 @@
+#Dashboard{
+  display: flex;
+  flex-direction:row;
+  height: 100%; /* 继承父元素高度 */
+  width: 100%; /* 宽度充满 */
+  position: fixed;
+  font-size: 0.16rem;
+}
+@mixin panel{
+    display: flex;
+    height: 100%; /* 高度充满父容器 */
+    min-height: 100%; /* 确保高度不会小于容器 */
+}
+
+
+// @media (max-width: 900px) {
+//   .leftpannel{
+//     @include panel();
+//     flex: 2;
+//     flex-wrap: wrap;
+//     position: relative;
+//     height: 100%; /* 继承父元素高度 */
+//     margin-left: 2.5vh;
+//     z-index: 1;
+    
+// }
+// .middlepannel{
+//     @include panel();
+//     background-color: aquamarine;
+//     flex: 2;
+// }
+// .rightpannel{
+//     @include panel();
+//     background-color: burlywood;
+//     flex: 2;
+
+// }
+// }
+
+.leftpannel{
+    @include panel();
+    flex-wrap: wrap;
+    position: relative;
+    width: 4rem;
+    margin-left: 2.5vh;
+    z-index: 1;
+    pointer-events: none;
+}
+.middlepannel{
+    @include panel();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 13.5rem;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    pointer-events: none;
+}
+.rightpannel{
+    @include panel();
+    flex-wrap: wrap;
+    position: relative;
+    width: 4rem;
+    z-index: 1;
+    margin-right:  2vh;
+    pointer-events: none;
+}
+.amapwrap{
+    position: absolute;
+    height: 100vh; /* 继承父元素高度 */
+    width: 100vw; /* 宽度充满 */
+    z-index: 0;
+}

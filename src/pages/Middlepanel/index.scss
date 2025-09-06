@@ -1,0 +1,22 @@
+.top-wrap{
+    height: 18vh;
+    // background-color: aqua;
+}
+.logo{
+    position: absolute;
+    height: 11vh;
+    width: 100%;
+    background-image: url(../../assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // background-color: antiquewhite;
+}
+.other-entry{
+    position: relative;
+    height: 18vh;
+    width: 100%;
+    background-image: url(../../assets/other_entry.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 1.7777777778vh;
+}
